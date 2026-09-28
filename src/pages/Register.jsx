@@ -120,7 +120,7 @@ export const Register = () => {
                   <GraduationCap className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                   <input
                     type="text"
-                    placeholder="RV College of Engineering"
+                    placeholder="SVYASA Deemed to be University"
                     value={formData.college}
                     onChange={(e) => setFormData({ ...formData, college: e.target.value })}
                     className="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900/80 text-xs text-white placeholder-slate-500 border border-slate-700 focus:border-indigo-500 focus:outline-none"
@@ -136,7 +136,7 @@ export const Register = () => {
                   <BookOpen className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                   <input
                     type="text"
-                    placeholder="B.E. Computer Science"
+                    placeholder="MCA 3rd Sem"
                     value={formData.course}
                     onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                     className="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900/80 text-xs text-white placeholder-slate-500 border border-slate-700 focus:border-indigo-500 focus:outline-none"

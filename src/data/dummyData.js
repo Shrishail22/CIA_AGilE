@@ -5,8 +5,8 @@ export const DEFAULT_USER = {
   name: 'Shrishail',
   email: 'shrishail@college.edu',
   phone: '+91 98765 43210',
-  college: 'RV College of Engineering, Bengaluru',
-  course: 'B.E. Computer Science & Engineering (3rd Year)',
+  college: 'SVYASA Deemed to be University, Bengaluru',
+  course: 'MCA (3rd Semester)',
   avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
   isAuthenticated: true,
   memberSince: 'August 2024'
