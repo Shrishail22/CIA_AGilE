@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ExpenseProvider } from './context/ExpenseContext';
 import { Layout } from './components/layout/Layout';
 import { Login } from './pages/Login';
