@@ -79,7 +79,7 @@ export const Register = () => {
                 <User className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                 <input
                   type="text"
-                  placeholder="Alex Morgan"
+                  placeholder="Shrishail"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className={`w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900/80 text-xs text-white placeholder-slate-500 border focus:outline-none transition-all ${
@@ -99,7 +99,7 @@ export const Register = () => {
                 <Mail className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                 <input
                   type="email"
-                  placeholder="alex.m@college.edu"
+                  placeholder="shrishail@college.edu"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className={`w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900/80 text-xs text-white placeholder-slate-500 border focus:outline-none transition-all ${
@@ -120,7 +120,7 @@ export const Register = () => {
                   <GraduationCap className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                   <input
                     type="text"
-                    placeholder="NIT / IIT / College"
+                    placeholder="RV College of Engineering"
                     value={formData.college}
                     onChange={(e) => setFormData({ ...formData, college: e.target.value })}
                     className="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900/80 text-xs text-white placeholder-slate-500 border border-slate-700 focus:border-indigo-500 focus:outline-none"
@@ -136,7 +136,7 @@ export const Register = () => {
                   <BookOpen className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                   <input
                     type="text"
-                    placeholder="B.Tech CS"
+                    placeholder="B.E. Computer Science"
                     value={formData.course}
                     onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                     className="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900/80 text-xs text-white placeholder-slate-500 border border-slate-700 focus:border-indigo-500 focus:outline-none"

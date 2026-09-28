@@ -7,11 +7,11 @@ import {
 } from '../data/dummyData';
 
 const KEYS = {
-  USER: 'sem_user_data_v1',
-  EXPENSES: 'sem_expenses_data_v1',
-  CATEGORIES: 'sem_categories_data_v1',
-  BUDGET: 'sem_budget_data_v1',
-  SETTINGS: 'sem_settings_data_v1'
+  USER: 'sem_user_data_v2',
+  EXPENSES: 'sem_expenses_data_v2',
+  CATEGORIES: 'sem_categories_data_v2',
+  BUDGET: 'sem_budget_data_v2',
+  SETTINGS: 'sem_settings_data_v2'
 };
 
 export const getStoredUser = () => {

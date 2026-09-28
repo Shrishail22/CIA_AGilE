@@ -1,12 +1,12 @@
-// Initial Dummy Data for Student Expense Manager
+// Initial Dummy Data for Student Expense Manager - Indian College Context
 
 export const DEFAULT_USER = {
   id: 'user_101',
-  name: 'Alex Morgan',
-  email: 'alex.morgan@college.edu',
+  name: 'Shrishail',
+  email: 'shrishail@college.edu',
   phone: '+91 98765 43210',
-  college: 'National Institute of Technology',
-  course: 'Computer Science & Engineering (B.Tech, 3rd Year)',
+  college: 'RV College of Engineering, Bengaluru',
+  course: 'B.E. Computer Science & Engineering (3rd Year)',
   avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
   isAuthenticated: true,
   memberSince: 'August 2024'
@@ -20,7 +20,7 @@ export const DEFAULT_CATEGORIES = [
     color: '#F59E0B', // Amber
     budget: 3500,
     isDefault: true,
-    description: 'Canteen, Mess, Restaurants, Snacks & Swiggy/Zomato'
+    description: 'Canteen, Mess, South Indian Snacks, Swiggy & Zomato'
   },
   {
     id: 'cat_travel',
@@ -29,7 +29,7 @@ export const DEFAULT_CATEGORIES = [
     color: '#3B82F6', // Blue
     budget: 1500,
     isDefault: true,
-    description: 'Bus Pass, Cab/Auto rides, Metro & Fuel'
+    description: 'Namma Metro, BMTC Bus Pass, Auto Rides & Fuel'
   },
   {
     id: 'cat_edu',
@@ -38,7 +38,7 @@ export const DEFAULT_CATEGORIES = [
     color: '#4F46E5', // Indigo
     budget: 3000,
     isDefault: true,
-    description: 'Textbooks, Stationary, Online Courses & Exam Fees'
+    description: 'Textbooks, Stationary, Printouts & Exam Fees'
   },
   {
     id: 'cat_shop',
@@ -56,7 +56,7 @@ export const DEFAULT_CATEGORIES = [
     color: '#8B5CF6', // Purple
     budget: 1500,
     isDefault: true,
-    description: 'Movies, Gaming, Concerts, Outings & Subscriptions'
+    description: 'PVR Movies, Gaming, Concerts, Outings & Subscriptions'
   },
   {
     id: 'cat_health',
@@ -65,7 +65,7 @@ export const DEFAULT_CATEGORIES = [
     color: '#10B981', // Emerald
     budget: 1500,
     isDefault: true,
-    description: 'Medicines, Gym Membership, Doctor Consultations'
+    description: 'Apollo Pharmacy, Gym Pass, Doctor Consultations'
   },
   {
     id: 'cat_bills',
@@ -74,7 +74,7 @@ export const DEFAULT_CATEGORIES = [
     color: '#EF4444', // Red
     budget: 1500,
     isDefault: true,
-    description: 'Hostel Rent, Wi-Fi, Mobile Recharge, Electricity'
+    description: 'PG Rent Share, Wi-Fi, Jio Mobile Recharge, Electricity'
   },
   {
     id: 'cat_other',
@@ -83,7 +83,7 @@ export const DEFAULT_CATEGORIES = [
     color: '#6B7280', // Gray
     budget: 1000,
     isDefault: true,
-    description: 'Miscellaneous gifts, emergency expenses & others'
+    description: 'Miscellaneous gifts, emergency expenses & treats'
   }
 ];
 
@@ -97,67 +97,67 @@ const getRelativeDate = (daysAgo) => {
 export const DEFAULT_EXPENSES = [
   {
     id: 'exp_01',
-    title: 'College Canteen Lunch',
+    title: 'College Canteen Masala Dosa & Juice',
     amount: 120,
     category: 'Food',
     date: getRelativeDate(0), // Today
     paymentMethod: 'UPI',
-    description: 'Lunch with friends at main canteen (Thali + Juice)',
+    description: 'Lunch with friends at main campus canteen',
     createdAt: new Date(Date.now() - 0 * 86400000).toISOString()
   },
   {
     id: 'exp_02',
-    title: 'Monthly Bus Pass',
+    title: 'BMTC / Metro Pass Recharge',
     amount: 450,
     category: 'Travel',
     date: getRelativeDate(2),
-    paymentMethod: 'Cash',
-    description: 'Student concession monthly bus pass renewal',
+    paymentMethod: 'UPI',
+    description: 'Student monthly travel pass renewal',
     createdAt: new Date(Date.now() - 2 * 86400000).toISOString()
   },
   {
     id: 'exp_03',
-    title: 'Algorithms & Data Structures Textbook',
+    title: 'Operating Systems Reference Book',
     amount: 850,
     category: 'Education',
     date: getRelativeDate(3),
     paymentMethod: 'Debit Card',
-    description: 'Core Reference book for 5th Semester syllabus',
+    description: '5th Semester core textbook from Sapna Book House',
     createdAt: new Date(Date.now() - 3 * 86400000).toISOString()
   },
   {
     id: 'exp_04',
-    title: 'Wireless Earbuds',
+    title: 'boAt Airdopes Earbuds',
     amount: 1499,
     category: 'Shopping',
     date: getRelativeDate(5),
     paymentMethod: 'UPI',
-    description: 'Noise cancelling TWS earbuds for online lectures',
+    description: 'TWS earbuds for online lectures & coding study',
     createdAt: new Date(Date.now() - 5 * 86400000).toISOString()
   },
   {
     id: 'exp_05',
-    title: 'Movie Night & Popcorn',
+    title: 'PVR Movie Ticket & Popcorn',
     amount: 350,
     category: 'Entertainment',
     date: getRelativeDate(6),
     paymentMethod: 'UPI',
-    description: 'Weekend movie ticket with hostel roommates',
+    description: 'Weekend movie outing with hostel friends',
     createdAt: new Date(Date.now() - 6 * 86400000).toISOString()
   },
   {
     id: 'exp_06',
-    title: 'Hostel Electricity & Wi-Fi Share',
+    title: 'PG Room Rent & Wi-Fi Share',
     amount: 600,
     category: 'Bills',
     date: getRelativeDate(7),
     paymentMethod: 'Net Banking',
-    description: 'Monthly room maintenance and high-speed Wi-Fi share',
+    description: 'Monthly PG maintenance and high-speed Wi-Fi share',
     createdAt: new Date(Date.now() - 7 * 86400000).toISOString()
   },
   {
     id: 'exp_07',
-    title: 'Swiggy Dinner Order',
+    title: 'Swiggy Biryani Dinner Order',
     amount: 280,
     category: 'Food',
     date: getRelativeDate(8),
@@ -167,47 +167,47 @@ export const DEFAULT_EXPENSES = [
   },
   {
     id: 'exp_08',
-    title: 'Pharmacy & Multivitamins',
+    title: 'Apollo Pharmacy & Multivitamins',
     amount: 340,
     category: 'Health',
     date: getRelativeDate(9),
     paymentMethod: 'Cash',
-    description: 'Vitamin C supplements and cold medicines',
+    description: 'Vitamin supplements & cold medicines',
     createdAt: new Date(Date.now() - 9 * 86400000).toISOString()
   },
   {
     id: 'exp_09',
-    title: 'Notebooks & Project Stationary',
+    title: 'Lab Notebooks & Printouts',
     amount: 180,
     category: 'Education',
     date: getRelativeDate(11),
     paymentMethod: 'Cash',
-    description: 'Spiral lab record books, pens, and highlighters',
+    description: 'Spiral lab record books, pens, and project printouts',
     createdAt: new Date(Date.now() - 11 * 86400000).toISOString()
   },
   {
     id: 'exp_10',
-    title: 'Uber Cab Ride',
-    amount: 320,
+    title: 'Namma Yatri Auto Ride',
+    amount: 120,
     category: 'Travel',
     date: getRelativeDate(12),
     paymentMethod: 'UPI',
-    description: 'Shared cab to city center for hackathon event',
+    description: 'Auto ride to metro station for hackathon',
     createdAt: new Date(Date.now() - 12 * 86400000).toISOString()
   },
   {
     id: 'exp_11',
-    title: 'Campus Cafe Coffee & Snacks',
+    title: 'Campus Nescafe Coffee & Samosa',
     amount: 95,
     category: 'Food',
     date: getRelativeDate(14),
     paymentMethod: 'UPI',
-    description: 'Espresso coffee and sandwich during break',
+    description: 'Evening tea break snacks at campus stall',
     createdAt: new Date(Date.now() - 14 * 86400000).toISOString()
   },
   {
     id: 'exp_12',
-    title: 'College Cultural Fest Ticket',
+    title: 'College Cultural Fest Concert Ticket',
     amount: 750,
     category: 'Entertainment',
     date: getRelativeDate(15),
@@ -217,17 +217,17 @@ export const DEFAULT_EXPENSES = [
   },
   {
     id: 'exp_13',
-    title: 'Denim Jacket',
+    title: 'College Denim Jacket',
     amount: 1200,
     category: 'Shopping',
     date: getRelativeDate(17),
-    paymentMethod: 'Credit Card',
-    description: 'Winter season jacket from end-of-season sale',
+    paymentMethod: 'UPI',
+    description: 'Winter season jacket from sale',
     createdAt: new Date(Date.now() - 17 * 86400000).toISOString()
   },
   {
     id: 'exp_14',
-    title: 'Room Grocery Supplies',
+    title: 'PG Room Snacks & Maggi Supplies',
     amount: 420,
     category: 'Food',
     date: getRelativeDate(19),
@@ -237,7 +237,7 @@ export const DEFAULT_EXPENSES = [
   },
   {
     id: 'exp_15',
-    title: 'Mobile Recharge Plan (84 Days)',
+    title: 'Jio 5G Unlimited Mobile Recharge',
     amount: 299,
     category: 'Bills',
     date: getRelativeDate(21),
@@ -247,7 +247,7 @@ export const DEFAULT_EXPENSES = [
   },
   {
     id: 'exp_16',
-    title: 'React & Frontend Masterclass',
+    title: 'React & Frontend Certification Course',
     amount: 1199,
     category: 'Education',
     date: getRelativeDate(23),
@@ -267,12 +267,12 @@ export const DEFAULT_EXPENSES = [
   },
   {
     id: 'exp_18',
-    title: "Friend's Birthday Gift",
+    title: "Friend's Birthday Treat Share",
     amount: 500,
     category: 'Other',
     date: getRelativeDate(27),
     paymentMethod: 'UPI',
-    description: 'Personalized desk lamp & card gift share',
+    description: 'Personalized gift & cake share',
     createdAt: new Date(Date.now() - 27 * 86400000).toISOString()
   }
 ];

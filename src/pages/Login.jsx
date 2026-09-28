@@ -7,7 +7,7 @@ export const Login = () => {
   const { user, login } = useExpense();
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState('alex.morgan@college.edu');
+  const [email, setEmail] = useState('shrishail@college.edu');
   const [password, setPassword] = useState('password123');
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(true);
